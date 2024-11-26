@@ -1,0 +1,267 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #62a6d4; 
+    color: #333;
+    line-height: 1.2;
+}
+
+/* Gradient Background Color */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, hsl(196, 92%, 38%), #e5ebee); /* Gradasi warna pink dan ungu */
+    color: #ffffff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+
+/* Section Umum */
+section {
+    padding: 40px 0;
+}
+
+section h2 {
+    font-size: 2.2em;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Tentang Saya */
+.about {
+    background-color: #f89bd9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1em;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.2em;
+    color: #d4bec9; /* Warna pink untuk judul */
+}
+
+.about p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Keahlian */
+.skills {
+    background-color: #da5c9d;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.skills ul {
+    list-style-type: none;
+    font-size: 1.1em;
+    margin-top: 20px;
+}
+
+.skills li {
+    padding-left: 20px;
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.skills li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #8a2be2; /* Warna ungu untuk bullet points */
+}
+
+/* Portofolio */
+.portfolio {
+    background-color: #ea5eb0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio .project {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+}
+
+.portfolio .project img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.portfolio .project img:hover {
+    transform: scale(1.05);
+}
+
+.portfolio h3 {
+    margin-top: 10px;
+    font-size: 1.3em;
+    color: #8a2be2; /* Warna ungu untuk judul proyek */
+}
+
+.portfolio p {
+    font-size: 1em;
+    color: #777;
+}
+/* Gambar dalam portfolio */
+.portfolio .project img {
+    width: 300px; /* Mengubah lebar gambar menjadi 300px */
+    height: auto; /* Menjaga rasio aspek gambar */
+    border-radius: 50%; /* Membuat gambar menjadi oval (persentase tinggi dan lebar sama) */
+    transition: transform 0.3s ease; /* Efek transisi saat hover */
+}
+
+.portfolio .project img:hover {
+    transform: scale(1.05); /* Efek zoom ketika hover */
+}
+a
+/* Kontak */s
+.contact {
+    background-color: #dab7c9;
+    padding: 20px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .form-group {
+    margin-bottom: 12px;
+}
+
+.contact label {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+.contact input,
+.contact textarea {
+    padding: 8px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.contact button {
+    padding: 12px;
+    font-size: 1.1em;
+    background-color: #8a2be2; /* Ungu untuk tombol */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.contact button:hover {
+    background-color: #6a1b9a; /* Warna ungu yang lebih gelap saat hover */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #c45e93;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    color: #fff;
+}
+/* Mengubah ukuran gambar di dalam project */
+.project-img {
+    width: 300px;  /* Mengatur lebar gambar menjadi 300px */
+    height: auto;  /* Menjaga aspek rasio gambar */
+}
+/* Mengubah gambar menjadi oval */
+.project-img {
+    width: 300px;       /* Atur lebar gambar sesuai kebutuhan */
+    height: 200px;      /* Atur tinggi gambar sesuai kebutuhan */
+    border-radius: 50%; /* Membuat gambar berbentuk oval */
+    object-fit: cover;  /* Menjaga proporsi gambar agar tidak terdistorsi */
+}
+/* Menambahkan gaya untuk memusatkan gambar */
+.project {
+    display: flex;
+    justify-content: center;  /* Memusatkan gambar secara horizontal */
+    align-items: center;      /* Memusatkan gambar secara vertikal */
+    text-align: center;       /* Memusatkan teks di bawah gambar (jika ada) */
+    margin-bottom: 20px;      /* Memberikan jarak di bawah gambar */
+}
+
+.project-img {
+    width: 300px;             /* Atur lebar gambar sesuai kebutuhan */
+    height: 200px;            /* Atur tinggi gambar sesuai kebutuhan */
+    border-radius: 50%;       /* Membuat gambar berbentuk oval */
+    object-fit: cover;        /* Menjaga proporsi gambar agar tidak terdistorsi */
+
+}
+/* Styling untuk Portofolio */
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 30px 20px;
+}
+
+.project {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-10px); /* Efek hover */
+}
+
+.project img {
+    width: 100px;  /* Ukuran gambar lebih kecil */
+    height: 100px; /* Ukuran gambar lebih kecil */
+    object-fit: cover;
+    border-radius: 50%;  /* Membuat gambar berbentuk bulat */
+    margin-bottom: 15px;
+}
+
+}
+
+.project h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.project p {
+    font-size: 16px;
+    color: #ccc;
+}
+x
+
